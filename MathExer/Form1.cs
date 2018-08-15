@@ -16,5 +16,16 @@ namespace MathExer
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Location.X == 10 && pictureBox1.Location.Y == 10)
+            {
+                pictureBox1.Location = new Point(740, 10);
+            }
+            else
+                pictureBox1.Location = new Point(10, 10);
+
+        }
     }
 }
